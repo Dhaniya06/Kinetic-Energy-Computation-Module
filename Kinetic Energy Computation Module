@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double mass = sc.nextDouble();
+        double velocity = sc.nextDouble();
+        if(mass<0 || velocity<0){
+            System.out.println("Invalid Input");
+            return;
+        }
+        double KineticEnergy = 0.5*mass*velocity*velocity;
+        System.out.printf("%.2f",KineticEnergy);
+    }
+
+}
